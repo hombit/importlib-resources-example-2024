@@ -1,0 +1,23 @@
+[project]
+name = "my_project"
+version = "0.1.0"
+description = "importlib.resource demo"
+authors = [
+    { name = "Konstantin Malanchev", email = "malanchev@cmu.edu" }
+]
+readme = "README.md"
+license = { text = "Unlicense" }
+requires-python = ">=3.9"
+dependencies = ["pandas"]
+
+[project.urls]
+"Source Code" = "https://github.com/hombit/importlib-resources-example-2024"
+
+[tool.setuptools]
+packages = ["my_project"]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.package-data]
+"my_project" = ["data/table.csv"]
+
